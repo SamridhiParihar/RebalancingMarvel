@@ -1,0 +1,64 @@
+we have two classes :
+ package practice.example.Codility.Codility1;
+  public class OrderItem {
+        public String name;
+        public String size;
+        public String quantity;
+        public OrderItem(String name, String size, String quantity) {
+               this.name = name; this.size = size; this.quantity = quantity;
+        }
+  }
+  package practice.example.Codility.Codility1;
+  public class Pizza {
+        public String name ;
+        public int price_S;
+        public int price_M;
+        public int price_L;
+        public Pizza(String name, int price_S, int price_M, int price_L) {
+                this.name = name; this.price_S = price_S;
+                this.price_M = price_M;
+                 this.price_L = price_L;
+                 }
+  }
+  public class Solution {
+        public int solution (Pizza[] menu , OrderItem [] order ){
+                return 0;
+        }
+  }
+  so you have to frame a question for me don't give me solution or anything
+  ..I have given you two given classes that is OrderItem and Pizza name
+  filed in both is for pizza name size and quantitiy is the pizza size and quantity
+  ...(sizes can be "Medium","Large","Small") and in pizza class price_S denotes price
+  of small size and so on for others ....
+  now the question is there are four types of discount available :
+  you can apply anyone(atmost one) if applicable and also if not you just need
+  to return the total price you are given with the solution function to complete and return the value in integer format :
+   Discounts :
+            Discount1:
+                3 pizzas 1 cheap pizza free :
+                    - if you have 3 pizzas of anykind the cheapest one is free
+                    - you can apply this only once in a order
+                    - you can't split the order
+            Discount2:
+                5 pizzas for rupees 100
+                    - if there are 5 pizzas with same name(not necessarily different)
+                       you can get all for just 100
+                    - you can apply this only once in a order
+                    - you can't split the order
+            Discount3:
+                Buy One Large get One small for free
+                    - If in the order there is one Large pizza and one Small pizza
+                        with same name you can can get the small one for free
+                    - there is no limit on no of times you apply this offer
+                    - this discount is possible provided that no other discount has
+                        been provided Discount4: Any 3 large pizzas Pay for three medium
+                    - Buy any 3 large pizza and you will get them at the price of Medium of same name
+                    - you can apply this only once in a order
+                    - you can't split the order
+
+            Discount4:
+                 Buy for any three large Pizza pay for Medium
+                    - you can buy any three large pizza and pay for their medium price
+                       of the same name
+                    - you can apply this only once in a order
+                    - you can't split the order
